@@ -20,6 +20,7 @@ const (
 type Config interface {
 	GetPort() int
 	GetLogLevel() int8
+	GetDatastore() *DatastoreConfig
 }
 
 type ImperiumConfig struct {
